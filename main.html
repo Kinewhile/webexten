@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="Desktop_it_self"></section>
+
+    <div id="nowid">
+        <div id="now"></div>
+        <div id="now2"></div>
+    </div>
+
+    <nav id="apps" hidden></nav>
+
+    <div id="toolbar">
+        <button id="ext" class="round" title="Apps and extensions">🧩</button>
+        <span class="sep"></span>
+        <button id="back" class="round" title="Back">←</button>
+        <button id="forward" class="round" title="Forward">→</button>
+        <button id="reload" class="round" title="Reload">↻</button>
+        <div id="address">Desktop</div>
+        <button id="newtab" class="round" title="Open in a browser tab">↗</button>
+    </div>
+
+    <!-- right-click menu -->
+    <div id="ctx" hidden></div>
+
+    <!-- add / edit shortcut -->
+    <div id="dialogWrap" hidden>
+        <form id="dialog">
+            <h3 id="dTitle">New shortcut</h3>
+            <label>Name
+                <input id="dName" placeholder="youtube" maxlength="30" autocomplete="off">
+            </label>
+            <label>Website
+                <input id="dUrl" placeholder="https://www.youtube.com" autocomplete="off">
+            </label>
+            <p id="dErr"></p>
+            <div class="row">
+                <button type="button" id="dCancel">Cancel</button>
+                <button type="submit" id="dSave">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <input type="file" id="wallPick" accept="image/*" hidden>
+    <input type="file" id="iconPick" accept="image/*" hidden>
+
+    <script src="script.js"></script>
+</body>
+</html>
